@@ -2,17 +2,21 @@ body{
     background-color: pink;
 }
 .logo{
-    max-width: 150px;
+    max-width: 200px;
     display: block;
-    margin:auto;
+    /* margin:auto; */
 }
 .navigation{
-    text-align: right;
+    text-align: end;
 }
 .header{
     background-color: pink;
-    /* display: flex;  */
+     display: grid; 
     justify-content: space-evenly;
+    grid-template-columns: auto 1fr auto;
+    /* automatically fits*/
+    grid-template-rows: auto auto;
+    font-family: "Averia Serif Libre", serif;
 }
 .navigation a {
     color:rgb(0, 0, 0);
@@ -21,17 +25,35 @@ body{
     text-decoration: wavy;
 }
 .banner{
-    /*vh= viewpoint height = window height */
-    min-height: 50vh;
-    color: pink;
+    /* vh= viewpoint height = window height  */
+    /* min-height: 50vh; */
+    color: rgb(70, 168, 95);
     background-image: url(pexels-arina-krasnikova-7725968.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 .banner h1{
     text-align: center;
-    margin: 0px;
-    padding: 25vh;
-    font-size: 6em;
-    text-shadow: 5px 0px 20px #5e125e;
+    margin: 10px;
+    padding: 2em;
+    font-size: 2em;
+    text-shadow: 5px 0px 20px #82f5ae;
+   
+}
+.search{
+    /* NEED TO GRID ALL THE OTHERS 2 */
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+}
+.search input{
+    flex: 1;
+    padding: 5px;
+    background-color: transparent;
+}
+.search button{
+    border: solid 1px rgb(255, 47, 99);
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px;
 }
