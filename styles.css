@@ -1,40 +1,53 @@
 body{
-    background-color: pink;
+    background-color: rgb(241, 209, 214);
 }
 .logo{
-    max-width: 200px;
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 150px;
     display: block;
     /* margin:auto; */
 }
 .navigation{
-    text-align: end;
+    text-align: start;
+    grid-row: 2;
+    grid-column: 1;
+    overflow: auto;
+    white-space: nowrap;
+
 }
 .header{
-    background-color: pink;
-     display: grid; 
-    justify-content: space-evenly;
+    grid-row: 1;
+    grid-column: 2;
+    color:rgb(66, 176, 64);
+    display: grid;
+    text-align:start;
+    justify-content: normal;
     grid-template-columns: auto 1fr auto;
-    /* automatically fits*/
+    /* automatically fits */
     grid-template-rows: auto auto;
     font-family: "Averia Serif Libre", serif;
+    font-size: 150%;
 }
 .navigation a {
-    color:rgb(0, 0, 0);
+    color:rgb(66, 176, 64);
     display: inline-block;
     padding: 10px;
-    text-decoration: wavy;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a:hover{
+    background-color: rgb(245, 218, 242);
 }
 .banner{
-    /* vh= viewpoint height = window height  */
-    /* min-height: 50vh; */
-    color: rgb(70, 168, 95);
-    background-image: url(pexels-arina-krasnikova-7725968.jpg);
-    background-size: cover;
+    min-width:fit-content;
+    grid-row: 1;
+    grid-column: 2;
+    background-size:cover; 
     background-position: center;
-    
 }
 .banner h1{
-    text-align: center;
+    text-align:center;
     margin: 10px;
     padding: 2em;
     font-size: 2em;
@@ -51,9 +64,14 @@ body{
     flex: 1;
     padding: 5px;
     background-color: transparent;
+    border: rgb(66, 176, 64);
+    border-radius: 5px 0px 0px 5px;
+    border: solid 1px rgb(66, 176, 64);
+    
 }
 .search button{
-    border: solid 1px rgb(255, 47, 99);
+    border: solid 1px rgb(66, 176, 64);
     border-radius: 0px 5px 5px 0px;
     padding: 5px;
+    background-color: rgb(58, 163, 105);
 }
