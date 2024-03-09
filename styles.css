@@ -23,11 +23,11 @@ body {
 /* Navigation Link Styles */
 .navigation a {
     color: rgb(66, 176, 64);
-    display: vertical;
     padding: 10px;
-    text-decoration: none;
+    text-decoration:none;
     text-align: right;
 }
+/* the pages background  */
 .navigation a:hover {
     background-color: rgb(245, 218, 242);
 }
@@ -45,6 +45,13 @@ body {
     font-family: "Averia Serif Libre", serif;
     font-size: 150%;
 }
+/* mini slogan */
+.header p {
+    margin-top: 1; /* Reset default margin */
+    grid-row: 2;
+    grid-column: 2;
+}
+
 /* Banner Styles */
 .banner {
     min-width: fit-content;
@@ -70,7 +77,7 @@ body {
     display: flex;
     margin: 5px;
 }
-
+/* the textbox */
 .search input {
     flex: 1;
     padding: 5px;
@@ -79,7 +86,7 @@ body {
     border-radius: 5px 0px 0px 5px;
     height: min-content;
 }
-
+/* the search press*/
 .search button {
     padding: 5px;
     background-color: rgb(58, 163, 105);
@@ -87,6 +94,7 @@ body {
     border-radius: 0px 5px 5px 0px;
     height: min-content;
 }
+/* the pages */
 .navigation a.active {
     background-color: transparent;
     color: rgb(66, 176, 64);
@@ -108,12 +116,12 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-/* Show the Dropdown Content when Hovering or Clicking on the Dropdown Button */
+/* Show the Dropdown Content*/
 .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
     display: block;
 }
 
-/* Style the Links inside the Dropdown */
+/* Style the inside of the Dropdown */
 .dropdown-content a {
     color: rgb(66, 176, 64);
     padding: 12px 16px;
@@ -126,3 +134,21 @@ body {
     background-color: rgb(255, 202, 238);
     display: horizontal;
 }
+/* all the pics in the main part */
+.media{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+/* status bar indicator */
+.status-bar{
+    color:white;
+    text-shadow: rgb(66, 176, 64);
+    padding: 1px;
+    background-color:transparent;
+    position: fixed;
+     bottom: 1px; 
+    left: 0;
+    width: 100%; 
+}
+
