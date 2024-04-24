@@ -93,6 +93,7 @@ body {
     border: solid 1px rgb(124, 38, 136);
     border-radius: 0px 5px 5px 0px;
     height: min-content;
+    color:rgb(169, 84, 180);
 }
 /* the pages */
 .navigation a.active {
@@ -142,9 +143,10 @@ body {
 }
 .intro{
     color:beige;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
     font-size: large;
+    text-align: center;
 }
 /* status bar indicator */
 .status-bar{
@@ -157,4 +159,36 @@ body {
     left: 0;
     width: 100%; 
 }
-
+.pics{
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    gap:30px;
+}
+.pics img{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.pics video{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover; 
+}
+video.poster{
+    grid-row: span 2;
+    aspect-ratio:auto;
+}
+.item{
+    border: none;
+    background-color: inherit;
+    font-size: large;
+    cursor: pointer;
+}
+.item button{
+    padding: 7px;
+    background-color: beige;
+    color:rgb(169, 84, 180);
+    border-color: transparent;
+    font-size: 15px;
+}
