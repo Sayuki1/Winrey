@@ -140,6 +140,12 @@ body {
     display: flex;
     align-items: center;
 }
+.intro{
+    color:beige;
+    max-width: 800px;
+    margin: auto;
+    font-size: large;
+}
 /* status bar indicator */
 .status-bar{
     color:white;
